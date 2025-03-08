@@ -17,7 +17,7 @@ const Parallax: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   
   // Smooth spring physics for mouse movement
   const smoothMouseX = useSpring(mouseX, { stiffness: 50, damping: 20 });
-  const smoothMouseY = useSpring(mouseY, { stiffness: 50, damping: 20 });
+  // const smoothMouseY = useSpring(mouseY, { stiffness: 50, damping: 20 });
   
   // Transform values for different parallax layers
   const nebulaY = useTransform(scrollY, [0, windowSize.height], [0, windowSize.height * 0.1]);
